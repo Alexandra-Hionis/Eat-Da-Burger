@@ -1,0 +1,26 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Node, Express, Handlebars application. It follows the MVC design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandra-Hionis/Eat-Da-Burger.git"
+  },
+  "author": "Alexandra Hionis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alexandra-Hionis/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/Alexandra-Hionis/Eat-Da-Burger#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1"
+  }
+}
