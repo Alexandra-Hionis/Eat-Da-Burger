@@ -1,38 +1,87 @@
-<h1>Cats!</h1>
+{{!-- <div class="container">
+    <div class="row">
+        <!-- Start burger title section -->
+        <div class="col-12 burger burger-header">
+            <h1><strong>Eat-Da-Burger!</strong></h1>
+            <p>Make a burger, then devour it!</p>
+            <h4>Add a burger</h4>
+    </div>
+</div>
+</div>
+    <div class="container">
+    <div class="row">
+            <form class="create-form">
 
-<h2>Cats that are not sleepy!</h2>
+                <div class="form-group">
+                    <input type="text" id="newburg" name="name">
+                </div>
 
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+                <button type="submit" class="btn btn-danger">Add Da Burger</button> 
+            </form>
+        </div>
+    </div>
 
-<h2>Cats that are sleepy!</h2>
+<div class="container">
+      <div class="row">
+        <div class="col-12 about">
+          <!-- burger image -->
+          <img id="photo" src="public/assets/images/cute-brger.png" class="mr-3" alt="cute burger image">
+        </div>
+      </div>
+    </div> --}}
 
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+<div class="container">
 
-<h2>Add a Cat</h2>
-<form class="create-form">
+    <div class="jumbotron text-center" style="background-color:#FBF8C1">
+        <h1>Eat-Da-Burger!</h1>
+        <p>Make a burger, then devour it!</p>
+        
+        
+        <h2>Add a burger (yum!)</h2>
+        <form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
+        <div class="form-group">
+            <input type="text" id="newburg" name="name">
+        </div>
 
-  <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
-</form>
+        <button type="submit" class="btn btn-danger">Add Da Burger</button>
+        </form>
+    </div> 
+</div>
+<div><img src="public/assets/images/cute-brger.png" class="mr-3" alt="cute burger image" width="500" height="600"></div>
+        <!-- Undevoured Burgers -->
+        {{!-- <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each burgers}}
+                            {{#unless devoured}}
+                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
+                                <hr>
+                            {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Devoured Burgers -->
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each burgers}}
+                            {{#if devoured}}
+                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+                                <hr>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+     --}}
+{{!-- </div> container  --}}

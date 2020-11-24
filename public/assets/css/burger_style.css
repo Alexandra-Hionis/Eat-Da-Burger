@@ -1,0 +1,13 @@
+/* eat-da-burger title section styles */
+.jumbotron {
+    margin-top: 30px;
+    background-color: peachpuff;
+}
+
+/* image style */
+#photo {
+    width: 270px;
+    height: 180px;
+    border: solid 2px black; 
+    margin-bottom: 40px;
+}
