@@ -3,6 +3,7 @@ var orm = require("../config/orm.js");
 
 var burgr = {
   all: function(cb) {
+    // burgers is table name
     orm.all("burgers", function(res) {
       cb(res);
     });
