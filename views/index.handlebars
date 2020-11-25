@@ -1,30 +1,9 @@
-<div class="container">
+
 
     <div class="jumbotron text-center" style="background-color:#FBF8C1">
-        <h1>Eat-Da-Burger!</h1>
-        <p>Make a burger, then devour it!</p>
-        {{!-- <img id="photo" src="/assets/images/cute-brger.png" class="mr-3" alt="cute burger image" width="100"
-            height="100"> --}}
-        <iframe src="https://giphy.com/embed/U5ac9kXMM9M0hUhgmN" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-        <p><strong>Add a burger, yum!</strong></p>
-        <form class="create-form">
-
-            <div class="form-group">
-                <input type="text" id="newburg" name="name">
-            </div>
-
-            <button type="submit" class="btn btn-danger">Add Da Burger</button>
-        </form>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="jumbotron text-center" style="background-color:#FBF8C1">
+        <div class="container">
         <div class="row">
-            <!-- Undevoured Burgers -->
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="div">
                     <div class="da-burgers" style="background-color:#FBF8C1">
                         <strong>Da Burgers</strong></div>
@@ -40,10 +19,71 @@
                         {{/each}}
                     </ul>
                 </div>
+            </div>
+        
+        <div class="col-sm-4">
+        <h1>Eat-Da-Burger!</h1>
+        <p>Make a burger, then devour it!</p>
+        {{!-- <img id="photo" src="/assets/images/cute-brger.png" class="mr-3" alt="cute burger image" width="100"
+            height="100"> --}}
+        <iframe src="https://giphy.com/embed/U5ac9kXMM9M0hUhgmN" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+        <p><strong>Add a burger, yum!</strong></p>
+        <form class="create-form">
+
+            <div class="form-group">
+                <input type="text" id="newburg" name="name">
+            </div>
+
+            <button type="submit" class="btn btn-danger btn">Add Da Burger</button>
+        </form>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="div">
+                        <div class="da-burgers" style="background-color:#FBF8C1">
+                            <strong>Devoured</strong></div>
+                    </div>
+                    <div>
+                    <ul>   
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        {{> burgers/burger-block devoured=true}}
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                        
+                    </div>        
+
+    </div>
+</div>
+</div>
+    </div>
+
+{{!-- <div class="container">
+    <div class="jumbotron text-center" style="background-color:#FBF8C1"> --}}
+        {{!-- <div class="row"> --}}
+            <!-- Undevoured Burgers -->
+            {{!-- <div class="col-sm-6">
+                <div class="div">
+                    <div class="da-burgers" style="background-color:#FBF8C1">
+                        <strong>Da Burgers</strong></div>
+                </div>
+                <div>
+                    <ul> --}}
+                    {{!-- var burger coming from controllers --}}
+                    {{!-- handlebars syntax how to loop through data --}}
+                        {{!-- {{#each burgers}}
+                        {{#unless devoured}}
+                        {{> burgers/burger-block devoured=false}} 
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div> --}}
 
 
                 <!-- Devoured Burgers -->
-                <div class="col-sm-6">
+                {{!-- <div class="col-sm-6">
                     <div class="div">
                         <div class="da-burgers" style="background-color:#FBF8C1">
                             <strong>Devoured</strong></div>
@@ -60,6 +100,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </div> --}}
+    {{!-- </div>
+</div> --}}
