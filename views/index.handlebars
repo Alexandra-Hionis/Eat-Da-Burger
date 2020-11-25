@@ -4,9 +4,10 @@
         <h1>Eat-Da-Burger!</h1>
         <p>Make a burger, then devour it!</p>
 
-        <img id="photo" src="/assets/images/cute-brger.png" class="mr-3" alt="cute burger image" width="100"
-            height="100">
+        {{!-- <img id="photo" src="/assets/images/cute-brger.png" class="mr-3" alt="cute burger image" width="100"
+            height="100"> --}}
 
+        <iframe src="https://giphy.com/embed/U5ac9kXMM9M0hUhgmN" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         <p><strong>Add a burger, yum!</strong></p>
         <form class="create-form">
 
@@ -35,7 +36,7 @@
                     {{!-- handlebars syntax how to loop through data --}}
                         {{#each burgers}}
                         {{#unless devoured}}
-                        {{> burgers/burger-block devoured=false}}
+                        {{!-- {{> burgers/burger-block devoured=false}}  --}}
                         {{/unless}}
                         {{/each}}
                     </ul>
@@ -52,7 +53,7 @@
                     <ul>   
                         {{#each burgers}}
                         {{#if devoured}}
-                        {{> burgers/burger-block devoured=true}}
+                        {{!-- {{> burgers/burger-block devoured=true}} --}}
                         {{/if}}
                         {{/each}}
                     </ul>
