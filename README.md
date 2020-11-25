@@ -1,5 +1,7 @@
 # Eat-Da-Burger
 
+[Click me for some burger fun!] (https://salty-brook-22385.herokuapp.com/)
+
 ## Description
 Eat-Da-Burger! is an application that lets users input the names of burgers they'd like to eat. It features a fun burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern.
 
