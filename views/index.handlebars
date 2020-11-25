@@ -1,15 +1,16 @@
 
-
+<div class="container">
     <div class="jumbotron text-center" style="background-color:#FBF8C1">
-        <div class="container">
+        
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 list-burgers">
                 <div class="div">
                     <div class="da-burgers" style="background-color:#FBF8C1">
                         <strong>Da Burgers</strong></div>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="list-group list-group-flush">
+            
                     {{!-- var burger coming from controllers --}}
                     {{!-- handlebars syntax how to loop through data --}}
                         {{#each burgers}}
@@ -17,6 +18,7 @@
                         {{> burgers/burger-block devoured=false}} 
                         {{/unless}}
                         {{/each}}
+                        
                     </ul>
                 </div>
             </div>
@@ -39,7 +41,7 @@
         </form>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-4 list-burgers">
         <div class="div">
                         <div class="da-burgers" style="background-color:#FBF8C1">
                             <strong>Devoured</strong></div>

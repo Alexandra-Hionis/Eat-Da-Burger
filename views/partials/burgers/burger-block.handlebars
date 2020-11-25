@@ -1,9 +1,9 @@
-<li>
+<li class="list-group-item list-group-flush"  style="background-color:#FBF8C1">
 	{{burger_name}}
 
-    {{#unless devoured }}<button id="{{id}}" class="devourBtn btn btn-sm btn-info " data-id="{{id}}" data-devour="true">
+    {{#unless devoured }}<button id="{{id}}" class="devourBtn btn btn-sm btn-secondary" data-id="{{id}}" data-devour="true">
         Devour</button>{{/unless}}
 
-	<button class="deleteburger" data-id="{{this.id}}">DELETE!</button>
+	<button class="deleteburger btn btn-sm btn-info" data-id="{{this.id}}">Delete</button>
 	
 </li>

@@ -3,13 +3,27 @@ body {
 }
 /* eat-da-burger title section styles */
 .jumbotron {
-    margin: 60px 40px 0px 40px;
+    margin-top: 60px;   
 }
 
 #photo {
     margin-bottom: 20px;
 }
 
-.da-burgers {
-    margin-bottom: 20px;
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    /* margin-left: -40px;  */
+}
+
+.list-burgers {
+    border: solid black 1px;
+    /* margin-left: -20px; */
+}
+
+.list-group {
+    font-size: 14px;
+    
+    
 }
