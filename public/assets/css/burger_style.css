@@ -14,16 +14,12 @@ body {
 ul {
     list-style-type: none;
     text-align: left;
-    /* margin-left: -40px;  */
 }
 
 .list-burgers {
     border: solid black 1px;
-    /* margin-left: -20px; */
 }
 
 .list-group {
-    font-size: 14px;
-    
-    
+    font-size: 14px; 
 }
