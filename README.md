@@ -1,7 +1,7 @@
 # Eat-Da-Burger
 
 ## Description
-Eat-Da-Burger! is an applicatoin that lets users input the names of burgers they'd like to eat. It features a fun burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern.
+Eat-Da-Burger! is an application that lets users input the names of burgers they'd like to eat. It features a fun burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern.
 
 ## Table of Contents
 - [Description](#description)
