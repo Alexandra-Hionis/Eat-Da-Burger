@@ -23,14 +23,14 @@ $(function() {
     );
   });
   
-    $(".devourBurgerBtn").on("click", function(event) {
+    $(".devourBtn").on("click", function(event) {
       // prevent default since we're using submit button
       event.preventDefault(); 
       var id = $(this).data("id");
       var newDevour = $(this).data("newdevour");
   
       var newDevouredState = {
-        devoured: newDevour
+        devoured: true
       };
   
       // Send the PUT request.
